@@ -6,7 +6,7 @@ import { EditAuthor } from '../EditAuthor/EditAuthor';
 import { useState } from 'react';
 
 export const App=()=> {
-  const URL = "http://localhost:8000/api/authors";
+  const URL = "https://authors-lryr.onrender.com/api/authors";
   const [authors, setAuthors] = useState([]);
   const [authorToEdit, setAuthorToEdit] = useState([{}]);
   return (

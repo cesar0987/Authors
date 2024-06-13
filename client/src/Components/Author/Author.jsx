@@ -8,7 +8,7 @@ export const Author = ({author,setAuthorToEdit}) => {
     }
 
     const handleDelete = () => {
-        fetch(`http://localhost:8000/api/authors/${author._id}`, {
+        fetch(`https://authors-lryr.onrender.com/api/authors/${author._id}`, {
             method: "DELETE"
         })
             .then(res => {
